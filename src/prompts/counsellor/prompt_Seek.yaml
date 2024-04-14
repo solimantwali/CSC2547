@@ -1,0 +1,18 @@
+name: counsellor_prompt_Seek
+text: |
+  Seeking Collaboration is when a clinician explicitly attempts to share power or acknowledge the expertise of the
+  client. It can occur when the clinician genuinely seeks consensus with the client regarding tasks, goals or
+  directions of the session. Seeking collaboration may be assigned when the clinician asks what the client thinks
+  about information provided. When permission to give information or advice is sought, the utterance is typically
+  Seeking Collaboration.
+
+  When a clinician asks about the client’s knowledge or understanding of a particular topic, this counts as a Question.
+  It is not considered to be Seeking Collaboration.
+
+description: Prompt for counsellor bot to generate an utterance with Seek.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'

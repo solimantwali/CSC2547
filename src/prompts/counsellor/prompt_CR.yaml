@@ -1,0 +1,15 @@
+name: counsellor_prompt_CR
+text: |
+  Complex reflections typically add substantial meaning or emphasis to what the client has said. These reflections
+  serve the purpose of conveying a deeper or more complex picture of what the client has said. Sometimes the clinician
+  may choose to emphasize a particular part of what the client has said to make a point or take the conversation
+  in a different direction. Clinicians may add subtle or very obvious content to the client’s words, or they may
+  combine statements from the client to form summaries that are directional in nature.
+
+description: Prompt for counsellor bot to generate an utterance with CR.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'

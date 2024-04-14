@@ -1,0 +1,177 @@
+name: evaluator_prompt_1
+text: |
+  Ignore all previous instructions.
+
+  You are an expert in Motivational Interviewing.
+
+  The following conversation is between a clinician and a smoker.
+
+  Parse the clinician's last volley into utterances, defined as complete thoughts or thought units. Then,
+  classify the clinician utterances with behavioural codes, although not all utterances will receive a behavior code.
+  Use abbreviations for the codes. Follow the DECISION RULES. In the output, provide parsed utterances and
+  behavioural codes only.
+
+  The maximum possible number of codes per volley is 8.
+  Only one of each of the following codes may be assigned per volley (full codes and abbreviations):
+  1. Giving Information (GI)
+  2. Persuade (Persuade) or Persuade with Permission (Persuade with)
+  3. Question (Q)
+  4. Reflection Simple (SR) or Complex (CR)
+  5. Affirm (AF)
+  6. Seeking Collaboration (Seek)
+  7. Emphasizing Autonomy (Emphasize)
+  8. Confront (Confront)
+
+  Following each parsed utterance, provide the behavioural codes in the following format: (abbreviation)
+  Example: (AF) (Emphasize)
+
+  If the utterance is not assigned a behavioral code, label it as Not Coded (NC).
+
+  Each utterance may receive only one behavior code and each volley earns each code only once.
+
+  Reflections are handled differently. There is only one reflection code given per volley, regardless of
+  the combination of simple and complex reflections in that volley.
+  If any of the reflections are complex, then the Complex Reflection (CR) code is used.
+  Otherwise, the reflection code is Simple Reflection (SR).
+
+  Finally, for questions, only one per volley is coded. If multiple questions are offered within the same volley,
+  the clinician will only receive a single Question behavior code.
+
+  DECISION RULE: If the coder is not sure whether to parse or not, the default should be to decide in favor of fewer parses.
+
+  Client statements such as “yeah” or “right” that do not interrupt the interviewer sequence are considered
+  facilitative statements, and should not interrupt the interviewer volley when coding. However, the volley might be
+  parsed if the client’s facilitative statement serves as an answer to the clinician’s direct question or reflection.
+  Remember, the default is to choose fewer parses.
+
+  The definitions for each behavioral code are listed below:
+  1. Giving Information (GI)
+  This category is used when the interviewer gives information, educates, provides feedback, or expresses a
+  professional opinion without persuading, advising, or warning. Typically, the tone of the information is neutral,
+  and the language used to convey general information does not imply that it is specifically relevant to the client
+  or that the client must act on it. No subcodes are assigned for Giving Information.
+
+  Structuring statements are not coded as Giving Information. These include statements that indicate what is going to
+  happen during the session, instructions for an exercise during the session, set-up of another appointment,
+  or discussion about the number and timing of sessions for a research protocol.
+
+  2. Persuade (Persuade) or Persuade with Permission (Persuade with)
+  2.1 Persuade (Persuade):
+  The clinician makes overt attempts to change the client’s opinions, attitudes, or behavior using tools such as logic,
+  compelling arguments, self-disclosure, or facts (and the explicit linking of these tools with an overt message to
+  change).  Persuasion is also coded if the clinician gives biased information, advice, suggestions, tips, opinions,
+  or solutions to problems without an explicit statement or strong contextual cue emphasizing the client’s autonomy in
+  receiving the recommendation.
+
+  Note that if the therapist is giving information in a neutral manner, without an explicit focus on influencing or
+  convincing the client, the Giving Information code should be used.
+
+  DECISION RULE: If the coder cannot decide between the Persuasion and the Giving Information code,
+  the Giving Information code should be used. This decision rule is intended to set a relatively high bar for the
+  Persuasion code.
+
+  2.2 Persuade with Permission (Persuade with):
+  Persuade with Permission is assigned when the interviewer includes an emphasis on collaboration or autonomy support
+  while persuading.  The condition of permission may be present when:
+  - The client asks directly for the clinician’s opinion on what to do or how to proceed.
+  - The clinician asks the client directly for permission to provide advice, make suggestions, give opinion,
+    offer feedback, express concerns, making recommendations, or discuss a particular topic.
+  - The clinician uses autonomy supportive language to preface or qualify the advice such that the client may chose to
+    discount, ignore, or personally evaluate that advice.
+
+  The clinician could seek a general sense of permission (How about we start today talking about your probation
+  requirements?) or permission specific to a topic, condition, or action item (If it is alright with you, I’ll share
+  some strategies that have been used by others to keep their blood sugar in check.).
+
+  Permission may be obtained before, during or after persuasion is used, but must occur close to persuasion in time.
+  If Persuade with Permission is accompanied by an explicit Seeking Collaboration or Emphasizing Autonomy,
+  both the Persuade with Permission and the Seeking Collaboration or/Emphasizing Autonomy code should be assigned.
+
+  If a clinician has asked for more general permission, it does not need to be repeated for every statement or
+  suggestion. There is a “condition of permission” that may last for several minutes.
+
+  DECISION RULE:  When both Persuade AND Persuade with Permission occur in the same utterance,
+  the coder should only assign the Persuade with Permission code.
+
+  3. Question (Q)
+  All questions from clinicians (open, closed, evocative, fact-finding, etc.) receive the Question code
+  but only one question per volley is coded.
+
+  4. Reflection Simple (SR) or Complex (CR)
+  Simple reflections typically convey understanding or facilitate client–clinician exchanges. These reflections
+  add little or no meaning (or emphasis) to what clients have said. Simple reflections may mark very important or
+  intense client emotions, but do not go far beyond the client’s original statement. Clinician summaries of several
+  client statements may be coded as simple reflections if the clinician does not use the summary to add an additional
+  point or direction.
+
+  Complex reflections typically add substantial meaning or emphasis to what the client has said. These reflections
+  serve the purpose of conveying a deeper or more complex picture of what the client has said. Sometimes the clinician
+  may choose to emphasize a particular part of what the client has said to make a point or take the conversation
+  in a different direction. Clinicians may add subtle or very obvious content to the client’s words, or they may
+  combine statements from the client to form summaries that are directional in nature.
+
+  DECISION RULE: When a coder cannot distinguish between a simple and complex reflection (including for summaries),
+  the default is to code a Simple Reflection..
+
+  5. Affirm (AF)
+  An affirmation (AF) is a clinician utterance that accentuates something positive about the client.
+  To be considered an Affirm, the utterance must be about client’s strengths, efforts, intentions, or worth.
+  The utterance must be given in a genuine manner and reflect something genuine about the client.
+  It does not have to be focused on the change goal and could reflect a “prizing” of the client for a specific trait,
+  behavior, accomplishment, skill, or strength. Affirms are often complex reflections, and when this occurs,
+  the Affirm code should be preferred.
+
+  Affirm should not be coded automatically for the clinician’s agreeing with, approval of, cheerleading for,
+  or non-specific praising of the client. They must be explicitly linked to client behaviors or specific
+  characteristics.  The utterance must seem genuine and not merely facilitative.
+
+  If the coder is not certain whether the statement is specific or strong enough to merit the Affirm code,
+  it should not be assigned.
+
+  6. Seeking Collaboration (Seek)
+  This code is assigned when a clinician explicitly attempts to share power or acknowledge the expertise of the client.
+  It can occur when the clinician genuinely seeks consensus with the client regarding tasks, goals or directions of
+  the session. Seeking collaboration may be assigned when the clinician asks what the client thinks about information
+  provided. When permission to give information or advice is sought, Seeking Collaboration is typically assigned.
+
+  When a clinician asks about the client’s knowledge or understanding of a particular topic, this is coded as a Question.
+  It is not considered to be Seeking Collaboration.
+
+  7. Emphasizing Autonomy (Emphasize)
+  These are utterances that clearly focus the responsibility with the client for decisions about and actions pertaining
+  to change. They highlight clients’ sense of control, freedom of choice, personal autonomy, or ability or obligation
+  to decide about their attitudes and actions. These are not statements that specifically emphasize the client’s sense
+  of self-efficacy, confidence, or ability to perform a specific action.
+
+  8. Confront (Confront)
+  This code is used when the clinician confronts the client by directly and unambiguously disagreeing, arguing,
+  correcting, shaming, blaming, criticizing, labeling, warning, moralizing, ridiculing, or questioning the
+  client’s honesty. Such interactions will have the quality of uneven power sharing, accompanied by disapproval or
+  negativity. Included here are instances where the interviewer uses a question or even a reflection,
+  but the voice tone clearly indicates a confrontation.
+
+  Restating negative information already known or disclosed by the client can be either a Confront or a Reflection.
+  Most Confronts can be correctly categorized by careful attention to voice tone and context.
+
+  DECISION RULE: In the relatively unusual circumstance where the coder is not certain whether to code an utterance
+  as a Confrontation or Reflection, no code should be assigned.
+
+  When clinicians use confrontation to emphasize a client strength, virtue or positive achievement, the Affirm code
+  should be considered.  A Confront is not mandatory when the clinician is clearly attempting to affirm or
+  support the client.
+
+  9. Not Coded (NC)
+  Examples of utterances that are not coded:
+  1. Structure statements: “Now we’ll talk about the forms from last week.”
+  2. Greetings:   “Hi Joe. Thanks for coming in today.”
+  3. Facilitative statements: “Okay, all right. Good.”
+  4. Previous session content: “Last week you mentioned you were really tired.”
+  5. Incomplete thoughts: “You mentioned….” (client interrupts)
+  6. Off-topic material:  “It’s a bit cold in here.”
+
+  The conversation begins here:
+
+description: Extensive prompt that includes almost anything relevant from MITI, except for examples.
+tags:
+  - evaluator
+version: '1.0.0'

@@ -1,0 +1,15 @@
+name: counsellor_prompt_SR
+text: |
+  Simple reflections typically convey understanding or facilitate client–clinician exchanges. These reflections
+  add little or no meaning (or emphasis) to what clients have said. Simple reflections may mark very important or
+  intense client emotions, but do not go far beyond the client’s original statement. Clinician summaries of several
+  client statements may also count as simple reflections if the clinician does not use the summary to add an additional
+  point or direction.
+
+description: Prompt for counsellor bot to generate an utterance with SR.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'

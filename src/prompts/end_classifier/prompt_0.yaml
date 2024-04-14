@@ -1,0 +1,38 @@
+name: ending_classifier_prompt_0
+text: |
+  Evaluate a sentence to determine whether the speaker is indicating that the conversation is coming to an end. Analyze the sentence for specific phrases, keywords, or conversational cues that are typically indicative of concluding a conversation. Based on your analysis, classify the sentence as either "True" for ending the conversation or "False" for not ending the conversation.
+
+  Input: A single sentence from a conversation.
+  Output: "True" if the sentence indicates the conversation is ending, "False" otherwise.
+  Criteria for Evaluation:
+
+  - Identify explicit farewell phrases or signs of parting, like "Goodbye," "See you later," or "I have to go now"
+  - Look for summary statements or wrap-up phrases, such as "In conclusion," "So, to wrap up,"
+  - Detect sentences that propose future communication, implying an end to the current conversation, for example, "Let's talk more about this next time," "I'll reach out to you later"
+  - Consider the conversational context implied by the sentence; certain phrases might imply an ending even if they don't directly state it
+  - NOTE: just because the person does not want to talk about certain topic, does not necessarily indicate that they want to end the conversation
+
+  Example Classifications:
+
+  Input: "Well, it was great catching up with you."
+  Output: True
+
+  Input: "What are your thoughts on this?"
+  Output: False
+
+  Input: "I should get going now, but let's do this again soon."
+  Output: True
+
+  Input: "Is there anything else you wanted to discuss?"
+  Output: False
+
+  Input: "I look forward to our next conversation."
+  Output: True
+
+  Input: "I'm not sure if I'm comfortable sharing this with you"
+  Output: False
+
+description: Prompt for a classifier for whether the speaker is indicating that the conversation is coming to an end.
+tags:
+  - classifier
+version: '0.0.1'

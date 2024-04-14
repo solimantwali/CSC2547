@@ -1,0 +1,21 @@
+name: counsellor_prompt_Q
+text: |
+  For your next turn of speech, ask a question in order to gather information, understand, or elicit the client's story.
+  This question may also be stated in imperative statement language.
+  The question can be open or closed, depending on what is appropriate for the context.
+
+  An open question is when the interviewer asks a question that allows a wide range
+  of possible answers. The question may seek information, may invite the client’s
+  perspective or may encourage self-exploration. The open question allows the option of
+  surprise for the questioner.
+
+  A closed question is when the interviewer asks the client a question that can be
+  answered with a “yes” or “no” or otherwise specific, restricted-range answer.
+
+description: Prompt for counsellor bot to generate an utterance with Q.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'

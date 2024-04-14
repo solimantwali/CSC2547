@@ -1,0 +1,21 @@
+name: counsellor_prompt_AF
+text: |
+  An affirmation (AF) is a clinician utterance that accentuates something positive about the client.
+  To be considered an Affirm, the utterance must be about client’s strengths, efforts, intentions, or worth.
+  The utterance must be given in a genuine manner and reflect something genuine about the client.
+  It does not have to be focused on the change goal and could reflect a “prizing” of the client for a specific trait,
+  behavior, accomplishment, skill, or strength. Affirms are often complex reflections, and when this occurs,
+  the Affirm code should be preferred.
+
+  Utterances should not be automatically called "Affirm" for the clinician’s agreeing with, approval of,
+  cheerleading for, or non-specific praising of the client. They must be explicitly linked to client behaviors
+  or specific characteristics. The utterance must seem genuine and not merely facilitative. "Affirm" is not assigned
+  if it isn't clear whether the statement is specific or strong enough to merit being called "Affirm".
+
+description: Prompt for counsellor bot to generate an utterance with AF.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'

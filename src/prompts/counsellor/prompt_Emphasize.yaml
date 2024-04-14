@@ -1,0 +1,14 @@
+name: counsellor_prompt_Emphasize
+text: |
+  Utterances that are emphasizing autonomy clearly focus the responsibility with the client for decisions about and
+  actions pertaining to change. They highlight clients’ sense of control, freedom of choice, personal autonomy,
+  or ability or obligation to decide about their attitudes and actions. These are not statements that specifically
+  emphasize the client’s sense of self-efficacy, confidence, or ability to perform a specific action.
+
+description: Prompt for counsellor bot to generate an utterance with Emphasize.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'

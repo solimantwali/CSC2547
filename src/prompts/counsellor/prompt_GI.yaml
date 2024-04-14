@@ -1,0 +1,18 @@
+name: counsellor_prompt_GI
+text: |
+  Giving information is when the utterance gives information, educates, provides feedback, or expresses a
+  professional opinion without persuading, advising, or warning. Typically, the tone of the information is neutral,
+  and the language used to convey general information does not imply that it is specifically relevant to the client
+  or that the client must act on it.
+
+  Structuring statements do not qualify as Giving Information. These include statements that indicate what is going to
+  happen during the session, instructions for an exercise during the session, set-up of another appointment,
+  or discussion about the number and timing of sessions for a research protocol.
+
+description: Prompt for counsellor bot to generate an utterance with GI.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'

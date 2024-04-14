@@ -1,0 +1,12 @@
+name: counsellor_prompt_NC
+text: |
+  For your next turn of speech, provide a single utterance that is just a generic structuring statement
+  which allows the patient to continue what they are saying, such as "Mm-hmm." or "Please go on."
+
+description: Prompt for counsellor bot to generate an utterance with NC.
+tags:
+  - counsellor
+  - therapist
+  - behavioural-code
+
+version: '0.0.1'
